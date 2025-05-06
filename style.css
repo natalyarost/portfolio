@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #e5540a;
+}
+
+/* lets do some basic css  */
+
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+ul, ol {
+    margin: 0;padding: 0;
+}
+
+li{list-style: none;}
+
+p, li {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+img {
+    max-width: 100%;
+    transition: .4s ease;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* lets start header  */
+
+.header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ebebeb;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+a.navbar-brand {
+    background: #000;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    padding: 7px 10px;
+}
+
+a.navbar-brand span {
+    background: white;
+    color: #000;
+    font-weight: bold;
+    padding: 0 4px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 15px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-icon {
+    font-size: 20px;
+    opacity: .7;
+}
+
+/* banner css  */
+
+section {
+    position: relative;
+}
+
+.banner-sec h1 {
+    font-size: 70px;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #333;
+}
+
+.banner-sec h5 {
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.banner-sec h5:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #333;
+    top: 50%;
+    right: -80%;
+}
+
+.web-btn a {
+    display: inline-block;
+    background-color: #000;
+    padding: 12px 25px;
+    color: white;
+}
+
+.bg-text {
+    color: #f7f7f7c7;
+    font-size: 137px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    z-index: -1;
+}
+
+/* about css  */
+
+.padd {
+    padding: 80px 0;
+}
+
+.title-span {
+    background: white;
+    color: var(--primary);
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    font-size: 500;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.title-span:before {
+    border: 2px solid var(--primary);
+    content: "";
+    height: 39px;
+    left: 0;
+    position: absolute;
+    top: -7px;
+    width: 39px;
+    z-index: -11;
+}
+
+.title-span:after {
+    background: white;
+    content: "";
+    height: 20px;
+    left: 34px;
+    position: absolute;
+    top: 3px;
+    width: 20px;
+    z-index: -1;
+}
+
+h2.title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+p.ab-p {
+    font-size: 24px;
+    font-weight: 700;
+    opacity: .3;
+}
+
+.exp {
+    align-items: center;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: -50px;
+    margin-top: -180px;
+    align-items: center;
+    width: 200px;
+    height: 210px;
+    flex-direction: column;
+}
+
+.exp h3 {
+    color: white;
+    font-size: 80px;
+}
+
+.exp span {
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    max-width: 450px;
+}
+
+.counter h3 {
+    color: var(--primary);
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 50px
+}
+
+.ab-img {
+    width: 90%;
+}
+
+/* lets style  */
+
+.portfolio-box {
+    position: relative;
+    width: 100%;
+}
+
+.port-text {
+    padding: 20px 35px;
+    background-color: white;
+    position: relative;
+    top: -40px;
+    border: 1px solid #ebebeb;
+    width: 90%;
+    margin: auto;
+    transition: .4s ease;
+}
+
+.portfolio-box:hover .port-text {
+    top: -60px;
+}
+
+.port-text span {
+    color: #687693;
+    font-size: 12px;
+}
+
+.port-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.port-img {
+    overflow: hidden;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.2);
+}
+
+/* lets style  */
+
+.testimonial-box {
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    margin: 40px 10px 0;
+    position: relative;
+}
+
+.testimonial-box p {
+    color: #323232;
+}
+
+.test-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.test-info span {
+    color: #687693;
+    font-size: 14px;
+}
+
+.test-info img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 100%;
+}
+
+.testimonial-box i {
+    font-size: 55px;
+    color: #000;
+    opacity: .2;
+    position: absolute;
+    right: 25px;
+    top: -25px;
+}
+
+/* lets style blog  */
+
+.blog-box {
+    border: 1px solid #ebebeb;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.blog-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-inner {
+    position: relative;
+}
+
+.tag {
+    background-color: var(--primary);
+    color: white;
+    font-size: 14px;
+    left: 15px;
+    padding: 7px 20px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 15px;
+}
+
+.blog-text {
+    padding-top: 20px;
+}
+
+.author-flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 10px;
+}
+
+.author-flex a {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.blog-box h5 {
+    font-size: 18px;
+}
+
+.blog-box:hover img {
+    transform: scale(1.2);
+}
+
+/* lets style  */
+
+.pricing-box {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.price-inner {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.pr-tag {
+    background: #19181d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+    padding: 3px 30px 5px;
+    color: white;
+    margin: 0 0 35px;
+}
+
+.price-inner p {
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 auto;
+    max-width: 285px;
+    padding-bottom: 30px;
+}
+
+.price-bottom {
+    padding: 35px 40px 40px;
+    text-align: center;
+}
+
+.price-bottom ul li {
+    color: #687693;
+    padding-bottom: 15px;
+}
+
+.price-bottom a {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    position: relative;
+}
+
+.pricing-box {
+    width: 95%;
+    background: #f5f5f5;
+    margin: auto;
+}
+
+.price-inner h5 {
+    color: #323232;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.price-inner h5 span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pricing-box.pricing-center {
+    box-shadow: rgb(0 0 0 / 17%) 0px 3px 8px;
+    transform: scale(1.04);
+}
+
+.form-box {
+    background-color: #f5f5f5;
+    padding: 85px 130px;
+    margin: auto;
+    width: 80%;
+}
+
+.form-box h2 {
+    font-size: 50px;
+}
+
+.form-box input , .form-box textarea {
+    background: transparent;
+    border: 1px solid #969aa67a;
+    border-radius: 0;
+    box-shadow: none  !important;
+    padding: 12px 10px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"]{
+
+    background: #19181d;
+    color: white;
+    font-size: 20px;
+
+}
+
+/* lets style  */
+
+footer {
+    background-color: #f5f5f5;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+}
+
+.socials a {
+    border: 1px solid #c7c4c4;
+    border-radius: 100%;
+    color: #687693;
+    font-size: 15px;
+    height: 40px;
+    display: inline-grid;
+    text-align: center;
+    place-content: center;
+    margin: 20px 3px;
+    width: 40px;
+}
+
+footer .navbar-brand {
+    font-size: 30px;
+    margin: 0 0 15px;
+    display: inline-block;
+}
+
+/* page design over all  */
+
+section {
+    border-bottom:  1px solid #ebebeb;
+    position: relative;
+}
+
+main {
+    position: relative;
+}
+
+main:before {
+    background: #ebebeb;
+    content: "";
+    height: 100%;
+    left: 40px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    z-index: 11;
+}
+
+main:after {
+    background-color: #ebebeb;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 1px;
+    z-index: 11;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
